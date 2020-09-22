@@ -71,7 +71,10 @@
             // 
             // tbChuVi
             // 
+            this.tbChuVi.BackColor = System.Drawing.Color.Yellow;
+            this.tbChuVi.Enabled = false;
             this.tbChuVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbChuVi.ForeColor = System.Drawing.Color.White;
             this.tbChuVi.Location = new System.Drawing.Point(295, 179);
             this.tbChuVi.Name = "tbChuVi";
             this.tbChuVi.ReadOnly = true;
@@ -112,6 +115,8 @@
             // 
             // tbDienTich
             // 
+            this.tbDienTich.BackColor = System.Drawing.Color.Yellow;
+            this.tbDienTich.Enabled = false;
             this.tbDienTich.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDienTich.Location = new System.Drawing.Point(295, 244);
             this.tbDienTich.Name = "tbDienTich";
@@ -158,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
